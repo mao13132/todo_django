@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<style>
+.box {
+  width: 200px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  background-color: red;
+}
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if chart %}
+    <div class="box">
+        <img src="data:image/png;base64, {{chart|safe}}" alt="График тестовый новый">
+    </div>
+{% endif %}
+<h1>Привет мир</h1>
+
+</body>
+</html>
